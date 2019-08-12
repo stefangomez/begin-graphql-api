@@ -2,13 +2,13 @@ let {ApolloServer, gql} = require('apollo-server-lambda')
 
 let typeDefs = gql`
   type Query {
-    hello: String
+    hello(name: String!): String
   }
 `
 
 let resolvers = {
   Query: {
-    hello: () => 'Hello world!',
+    hello: (parent, args, context, info) => `Hello ${args.name}!`,
   },
 }
 
