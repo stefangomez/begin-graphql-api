@@ -8,7 +8,7 @@ let typeDefs = gql`
 
 let resolvers = {
   Query: {
-    hello: (parent, args, context, info) => `Hello ${args.name}!`,
+    hello: (parent, args) => `Hello ${args.name}!`,
   },
 }
 
