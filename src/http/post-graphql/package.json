@@ -3,7 +3,7 @@
   "dependencies": {
     "@architect/data": "^2.0.15",
     "@architect/functions": "^3.0.2",
-    "apollo-server-lambda": "^2.4.8",
+    "apollo-server-lambda": "^2.14.2",
     "graphql": "^14.2.1"
   }
 }
